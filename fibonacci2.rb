@@ -2,9 +2,13 @@ y = 0
 
 x = 1
 
-count = 2
+puts "Enter a number of addends "
+
+count = gets.to_i
+
+fib = 0
  
-while count < 1000 do
+2.upto(count + 1) do |n|
 
     fib = y + x
 
@@ -12,8 +16,8 @@ while count < 1000 do
 
     x = fib
 
-    count +=1
+    n +=1
+
+    print "#{fib} \t"
 
 end
-
-puts fib
